@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Dutch-Treat.props" />
+</Project>
