@@ -1,6 +1,7 @@
 ﻿using Dutch_Treat.Data;
 using Dutch_Treat.Services;
 using Dutch_Treat.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Dutch_Treat.Controllers
@@ -8,12 +9,12 @@ namespace Dutch_Treat.Controllers
     public class AppController : Controller
     {
         private readonly IMailService _mailService;
-        private readonly DutchContext context;
+        private readonly IDutchRepository repository;
 
-        public AppController(IMailService mailService, DutchContext context)
+        public AppController(IMailService mailService, IDutchRepository repository)
         {
             _mailService = mailService;
-            this.context = context;
+            this.repository = repository;
         }
         public IActionResult Index()
         {
@@ -46,9 +47,10 @@ namespace Dutch_Treat.Controllers
             return View();
         }
 
+        //[Authorize]
         public IActionResult Shop()
         {
-            var result = context.Products.OrderBy(p => p.Category).ToList();
+            var result = repository.GetAllProducts();
             return View(result);
         }
     }

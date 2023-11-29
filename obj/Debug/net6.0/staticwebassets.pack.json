@@ -1,12 +1,216 @@
 {
   "Files": [
     {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\client\\favicon.ico",
+      "PackagePath": "staticwebassets\\client\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\client\\index.html",
+      "PackagePath": "staticwebassets\\client\\index.html"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\client\\main.js",
+      "PackagePath": "staticwebassets\\client\\main.js"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\client\\main.js.map",
+      "PackagePath": "staticwebassets\\client\\main.js.map"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\client\\polyfills.js",
+      "PackagePath": "staticwebassets\\client\\polyfills.js"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\client\\polyfills.js.map",
+      "PackagePath": "staticwebassets\\client\\polyfills.js.map"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\client\\runtime.js",
+      "PackagePath": "staticwebassets\\client\\runtime.js"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\client\\runtime.js.map",
+      "PackagePath": "staticwebassets\\client\\runtime.js.map"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\client\\styles.css",
+      "PackagePath": "staticwebassets\\client\\styles.css"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\client\\styles.css.map",
+      "PackagePath": "staticwebassets\\client\\styles.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\client\\vendor.js",
+      "PackagePath": "staticwebassets\\client\\vendor.js"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\client\\vendor.js.map",
+      "PackagePath": "staticwebassets\\client\\vendor.js.map"
+    },
+    {
       "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\al_mosafer2.jpg",
-      "PackagePath": "staticwebassets\\img\\al_mosafer2.jpg"
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-1595.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-1595.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-1935.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-1935.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-2344.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-2344.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-2351.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-2351.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-2391.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-2391.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-2860.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-2860.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-3066.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-3066.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-3137.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-3137.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-3138.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-3138.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-3262.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-3262.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-3276.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-3276.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-3298.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-3298.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-3307.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-3307.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-3340.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-3340.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-3341.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-3341.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-3477.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-3477.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-358.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-358.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-3934.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-3934.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-3981.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-3981.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-3982.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-3982.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-4019.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-4019.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-4050.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-4050.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-4057.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-4057.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-4096.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-4096.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-4119.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-4119.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-4674.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-4674.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-4691.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-4691.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-4717.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-4717.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-4833.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-4833.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-4885.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-4885.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-5033.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-5033.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-91.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-A-91.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-C-1747.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-C-1747.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-C-1768.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-C-1768.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-C-216.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-C-216.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-C-251.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-C-251.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-C-5.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-C-5.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-C-597.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-C-597.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-C-6.jpg",
+      "PackagePath": "staticwebassets\\img\\SK-C-6.jpg"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\VanGogh.jpg",
+      "PackagePath": "staticwebassets\\img\\VanGogh.jpg"
     },
     {
       "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\js\\index.js",
@@ -695,6 +899,26 @@
     {
       "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\lib\\jquery\\jquery.slim.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\jquery.slim.min.map"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\ts\\main.js",
+      "PackagePath": "staticwebassets\\ts\\main.js"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\ts\\main.js.map",
+      "PackagePath": "staticwebassets\\ts\\main.js.map"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\ts\\main.ts",
+      "PackagePath": "staticwebassets\\ts\\main.ts"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\ts\\shopper.js",
+      "PackagePath": "staticwebassets\\ts\\shopper.js"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\ts\\shopper.js.map",
+      "PackagePath": "staticwebassets\\ts\\shopper.js.map"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Dutch-Treat.Microsoft.AspNetCore.StaticWebAssets.props",

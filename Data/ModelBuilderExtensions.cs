@@ -9,11 +9,12 @@ namespace Dutch_Treat.Data
         public static void Seed(this ModelBuilder modelBuilder)
         {
             var json = File.ReadAllText("Data/art.json");
-            var products = JsonSerializer.Deserialize<IEnumerable<Product>>(json);
+            var products = JsonSerializer.Deserialize<List<Product>>(json);
 
-            foreach(var p in products)
+            for(int i = 1; i <= products.Count(); i++)
             {
-                modelBuilder.Entity<Product>().HasData(p);
+                products[i - 1].Id = i;
+                modelBuilder.Entity<Product>().HasData(products[i - 1]);
             }
 
             var order = new Order()
@@ -23,17 +24,20 @@ namespace Dutch_Treat.Data
                 OrderNumber = "12345"
             };
 
-            var orderItem = new OrderItem()
-            {
-                Id = 1,
-                OrderId = order.Id,
-                ProductId = products.First().Id,
-                Product = products.First(),
-                Quantity = 5,
-                UnitPrice = products.First().Price
-            };
+            modelBuilder.Entity<Order>().HasData(order);
 
-            modelBuilder.Entity<OrderItem>().HasData(orderItem);
+            //var orderItem = new OrderItem()
+            //{
+            //    Id = 1,
+            //    OrderId = order.Id,
+            //    ProductId = products.First().Id,
+            //    Product = products.First(),
+            //    Order = order,
+            //    Quantity = 5,
+            //    UnitPrice = products.First().Price
+            //};
+
+            //modelBuilder.Entity<OrderItem>().HasData(orderItem);
         }
     }
 }
