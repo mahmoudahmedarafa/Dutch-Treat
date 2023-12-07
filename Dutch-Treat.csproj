@@ -42,4 +42,11 @@
     <TypeScriptCompile Include="wwwroot\ts\shopper.ts" />
   </ItemGroup>
 
+  <Target Name="MyPublishScripts" BeforeTargets="BeforePublish">
+    <Exec Command="npm install"></Exec>
+    <Exec Command="gulp"></Exec>
+    <Exec Command="npm install" WorkingDirectory=".\\client"></Exec>
+    <Exec Command="ng build --prod" WorkingDirectory=".\\client"></Exec>
+  </Target>
+
 </Project>

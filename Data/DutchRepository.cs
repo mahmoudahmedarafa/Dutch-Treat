@@ -28,14 +28,24 @@ namespace Dutch_Treat.Data
             return context.Orders.ToList();
         }
 
+        public IEnumerable<Order> GetAllOrdersByUser(string userName, bool includeItems)
+        {
+            if (includeItems)
+            {
+                return context.Orders.Where(o => o.User.UserName == userName).Include(o => o.Items).ThenInclude(oi => oi.Product).ToList();
+            }
+
+            return context.Orders.Where(o => o.User.UserName == userName).ToList();
+        }
+
         public IEnumerable<Product> GetAllProducts()
         {
             return context.Products.OrderBy(p => p.Title).ToList();
         }
 
-        public Order GetOrderById(int id)
+        public Order GetOrderById(string userName, int id)
         {
-            return context.Orders.Where(o => o.Id == id)
+            return context.Orders.Where(o => o.Id == id && o.User.UserName == userName)
                                  .Include(o => o.Items)
                                  .ThenInclude(oi => oi.Product)
                                  .FirstOrDefault();

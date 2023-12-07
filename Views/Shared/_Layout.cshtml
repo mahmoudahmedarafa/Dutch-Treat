@@ -3,20 +3,32 @@
 <head>
     <meta charset="utf-8" />
     <title>@ViewBag.Title</title>
-    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/css/site.css" rel="stylesheet" />
+    <environment include="Development">
+        <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="~/css/site.css" rel="stylesheet" />
+    </environment>
+    <environment exclude="Development">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="~/dist/dutchtreat.min.css" rel="stylesheet" asp-append-version="true"/>
+    </environment>
     @RenderSection("head", false)
 </head>
 <body>
-    <header class="container">
-        <nav class="navbar navbar-dark bg-dark navbar-expand-md">
-            <h1 class="navbar-brand">Welcome to Dutch Treat</h1>
-            <div>
-                <ul class="navbar-nav">
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <header class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <h1 class="navbar-brand">Welcome to Dutch Treat</h1>
+                <ul class="navbar-nav flex-grow-1">
                     <li class="nav-item"><a class="nav-link" asp-controller="App" asp-action="Index">Home</a></li>
                     <li class="nav-item"><a class="nav-link" asp-controller="App" asp-action="Contact">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" asp-controller="App" asp-action="About">About</a></li>
                     <li class="nav-item"><a class="nav-link" asp-controller="App" asp-action="Shop">Shop</a></li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
                     @if (User.Identity.IsAuthenticated)
                     {
                         <li class="nav-item">
@@ -26,13 +38,16 @@
                     else
                     {
                         <li class="nav-item">
-                            <a class="nav-link" asp-controller="Account" asp-action="Login">Login</a>
+                            <a class="nav-link" asp-controller="account" asp-action="register">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="account" asp-action="login">Login</a>
                         </li>
                     }
                 </ul>
-            </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
+    </nav>
     <section class="container">
         <h2 class="text-center">@ViewBag.Title</h2>
         @RenderBody()
@@ -43,11 +58,24 @@
         </div>
     </footer>
 
-
-
-    <script src="~/lib/jquery/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="~/js/index.js"></script>
+    <environment include="Development">
+        <script src="~/lib/jquery/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="~/js/index.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+                integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+                crossorigin="anonymous"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery">
+    </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
+        </script>
+        <script src="~/dist/dutchtreat.min.js" asp-append-version="true"></script>
+    </environment>
 
     @RenderSection("Scripts", false)
 </body>

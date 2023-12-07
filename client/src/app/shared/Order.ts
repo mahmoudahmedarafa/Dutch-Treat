@@ -3,7 +3,7 @@ import { Product } from "./Product"
 export class Order {
   id: number
   orderDate: string
-  orderNumber: string
+  orderNumber: string = Math.random().toString(36).substr(2, 5);
   items: OrderItem[]
   user: any
 

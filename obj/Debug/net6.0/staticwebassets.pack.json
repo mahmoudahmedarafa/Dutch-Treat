@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\client\\3rdpartylicenses.txt",
+      "PackagePath": "staticwebassets\\client\\3rdpartylicenses.txt"
+    },
+    {
       "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\client\\favicon.ico",
       "PackagePath": "staticwebassets\\client\\favicon.ico"
     },
@@ -13,44 +17,28 @@
       "PackagePath": "staticwebassets\\client\\main.js"
     },
     {
-      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\client\\main.js.map",
-      "PackagePath": "staticwebassets\\client\\main.js.map"
-    },
-    {
       "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\client\\polyfills.js",
       "PackagePath": "staticwebassets\\client\\polyfills.js"
-    },
-    {
-      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\client\\polyfills.js.map",
-      "PackagePath": "staticwebassets\\client\\polyfills.js.map"
     },
     {
       "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\client\\runtime.js",
       "PackagePath": "staticwebassets\\client\\runtime.js"
     },
     {
-      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\client\\runtime.js.map",
-      "PackagePath": "staticwebassets\\client\\runtime.js.map"
-    },
-    {
       "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\client\\styles.css",
       "PackagePath": "staticwebassets\\client\\styles.css"
     },
     {
-      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\client\\styles.css.map",
-      "PackagePath": "staticwebassets\\client\\styles.css.map"
-    },
-    {
-      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\client\\vendor.js",
-      "PackagePath": "staticwebassets\\client\\vendor.js"
-    },
-    {
-      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\client\\vendor.js.map",
-      "PackagePath": "staticwebassets\\client\\vendor.js.map"
-    },
-    {
       "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\dist\\dutchtreat.min.css",
+      "PackagePath": "staticwebassets\\dist\\dutchtreat.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\dist\\dutchtreat.min.js",
+      "PackagePath": "staticwebassets\\dist\\dutchtreat.min.js"
     },
     {
       "Id": "D:\\Projects\\Dutch-Treat\\wwwroot\\img\\SK-A-1595.jpg",

@@ -1,5 +1,6 @@
 ﻿using Dutch_Treat.Data.Entities;
 using Dutch_Treat.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
@@ -53,6 +54,38 @@ namespace Dutch_Treat.Controllers
             }
 
             ModelState.AddModelError("", "Failed to login");
+
+            return View();
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [AllowAnonymous]
+        public async Task<IActionResult> Register(RegisterViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = new StoreUser { UserName = model.UserName, Email = "mahmoud.ahmed.arafa@gmail.com",
+                                           FirstName = model.UserName, LastName = model.UserName};
+                var result = await userManager.CreateAsync(user, model.Password);
+
+                if (result.Succeeded)
+                {
+                    await signInManager.SignInAsync(user, isPersistent: false);
+                    return RedirectToAction("index", "app");
+                }
+
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError("", error.Description);
+                }
+            }
 
             return View();
         }
